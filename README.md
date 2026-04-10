@@ -2,7 +2,7 @@
 
 
 
-Make it so title changed doeending on waht page 
+Fix title
 
 mix n match section
 
