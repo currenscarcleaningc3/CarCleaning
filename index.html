@@ -1,58 +1,63 @@
-<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css"> 
 
-<head>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/x-icon" href="C3.png">
-  <title>CarCleaningsC3</title>
-</head>
-
-<header>
-  Elite Car Cleaning
+<header class="siteHeader">
+  <title> DIDTHETABCHANGE??</title>
+  <div class="logo">🚗</div>
+  <div class="title">Curren's Car Cleaning</div>
 </header>
+
+
 
 <!-- SERVICES -->
 <section class="services">
-  <h2>Our Services</h2>
-  <p>We provide top-quality car cleaning including exterior washes, interior detailing, waxing, and full-service packages.</p>
+  <h2>My Services</h2>
+  <p>I provide top-quality, but affordable car cleaning at all levels. Regardless if you just need to wipe dirt off the extrrior, or need the interior fully vacumed and cleaned, I can provide anything needed. Take a look at all the paackages I have to offer, and if none of them seem right, look down at the "Mix N Match" section to make the perfect package for you.</p>
 </section>
 
 <!-- PACKAGES -->
 <section id="mainPage">
   <h2>Packages</h2>
+
   <div class="packages">
 
     <div class="package">
       <div class="imgPlaceholder"></div>
+
       <div class="packageContent">
         <h3 class="packageTitle">Basic Wash</h3>
-        <p>Exterior wash and dry</p>
-        <p><strong>$10</strong></p>
+        <p class="packageDesc">Quick exterior wash to remove dirt, dust, and light grime. Perfect for maintenance cleaning.</p>
+        <p class="packagePrice"><strong>$15</strong></p>
         <button class="btn" onclick="goToCheckout('Basic Wash', '$10')">Choose</button>
       </div>
     </div>
 
     <div class="package">
       <div class="imgPlaceholder"></div>
+
       <div class="packageContent">
         <h3 class="packageTitle">Standard Detail</h3>
-        <p>Exterior wash + interior vacuum</p>
-        <p><strong>$25</strong></p>
+        <p class="packageDesc">Exterior wash plus full interior vacuum, wipe-down, and light cleaning for a refreshed feel.</p>
+        <p class="packagePrice"><strong>$25</strong></p>
         <button class="btn" onclick="goToCheckout('Standard Detail', '$25')">Choose</button>
       </div>
     </div>
 
     <div class="package">
       <div class="imgPlaceholder"></div>
+
       <div class="packageContent">
         <h3 class="packageTitle">Premium Shine</h3>
-        <p>Full cleaning, wax, and interior detail</p>
-        <p><strong>$50</strong></p>
+        <p class="packageDesc">Complete detail including deep interior cleaning, exterior wash, waxing, and finishing shine.</p>
+        <p class="packagePrice"><strong>$50</strong></p>
         <button class="btn" onclick="goToCheckout('Premium Shine', '$50')">Choose</button>
       </div>
     </div>
 
   </div>
 </section>
+
+
+
 
 <!-- CHECKOUT SCREEN -->
 <section id="checkoutPage" style="display:none;">
