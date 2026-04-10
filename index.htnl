@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="styles.css">
+
+<header>
+  Elite Car Cleaning
+</header>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Our Services</h2>
+  <p>We provide top-quality car cleaning including exterior washes, interior detailing, waxing, and full-service packages.</p>
+</section>
+
+<!-- PACKAGES -->
+<section id="mainPage">
+  <h2>Packages</h2>
+  <div class="packages">
+
+    <div class="package">
+      <div class="imgPlaceholder"></div>
+      <div class="packageContent">
+        <h3 class="packageTitle">Basic Wash</h3>
+        <p>Exterior wash and dry</p>
+        <p><strong>$10</strong></p>
+        <button class="btn" onclick="goToCheckout('Basic Wash', '$10')">Choose</button>
+      </div>
+    </div>
+
+    <div class="package">
+      <div class="imgPlaceholder"></div>
+      <div class="packageContent">
+        <h3 class="packageTitle">Standard Detail</h3>
+        <p>Exterior wash + interior vacuum</p>
+        <p><strong>$25</strong></p>
+        <button class="btn" onclick="goToCheckout('Standard Detail', '$25')">Choose</button>
+      </div>
+    </div>
+
+    <div class="package">
+      <div class="imgPlaceholder"></div>
+      <div class="packageContent">
+        <h3 class="packageTitle">Premium Shine</h3>
+        <p>Full cleaning, wax, and interior detail</p>
+        <p><strong>$50</strong></p>
+        <button class="btn" onclick="goToCheckout('Premium Shine', '$50')">Choose</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CHECKOUT SCREEN -->
+<section id="checkoutPage" style="display:none;">
+  <h2>Review Your Order</h2>
+
+  <div class="checkoutBox">
+    <p id="checkoutPackage"></p>
+    <p id="checkoutPrice"></p>
+
+    <input id="name" placeholder="Your Name"><br><br>
+    <input id="phone" placeholder="Phone Number"><br><br>
+    <input id="date" placeholder="Preferred Date"><br><br>
+    <input id="time" placeholder="Preferred Time"><br><br>
+
+    <button id="sendEmailBtn" class="btn">Send Request</button>
+    <br><br>
+    <button class="btn backBtn" onclick="goBack()">Back</button>
+  </div>
+</section>
+
+<!-- EMAILJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
