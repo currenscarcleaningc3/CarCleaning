@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  color: orange;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services {
+  background-color: #111;
+}
+
+.packages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.package {
+  display: flex;
+  background-color: #1a1a1a;
+  border: 2px solid orange;
+  border-radius: 10px;
+  width: 80vw;
+  overflow: hidden;
+}
+
+.imgPlaceholder {
+  width: 30%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
+
+.imgPlaceholder::after {
+  content: "Image";
+}
+
+.packageContent {
+  width: 70%;
+  padding: 20px;
+  text-align: left;
+}
+
+.packageTitle {
+  color: orange;
+  margin-top: 0;
+}
+
+.btn {
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* CHECKOUT */
+.checkoutBox {
+  background-color: #1a1a1a;
+  border: 2px solid orange;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+}
+
+.backBtn {
+  background-color: gray;
+  color: white;
+}
