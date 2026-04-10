@@ -1,24 +1,9 @@
 let selectedPackage = "";
 let selectedPrice = "";
 
-// INIT EMAILJS
-(function(){
-  emailjs.init("zapb-UJGiOWVCrczr");
-})();
-
-function goToCheckout(pkg, price) {
-  selectedPackage = pkg;
-  selectedPrice = price;
-
-  document.getElementById("mainPage").style.display = "none";
-  document.getElementById("checkoutPage").style.display = "block";
-
-  document.getElementById("checkoutPackage").innerText = "Package: " + pkg;
-  document.getElementById("checkoutPrice").innerText = "Price: " + price;
-}
-
-// Wait until page loads (prevents errors)
 window.onload = function () {
+
+  emailjs.init("zapb-UJGiOWVCrczr");
 
   document.getElementById("sendEmailBtn").onclick = function () {
 
@@ -32,16 +17,25 @@ window.onload = function () {
     };
 
     emailjs.send("service_jso7x04", "template_t6t5c4j", params)
-      .then(function(response) {
-        alert("Booking request sent!");
-      }, function(error) {
+      .then(() => alert("Booking request sent!"))
+      .catch((error) => {
         alert("Failed to send. Check console.");
         console.log(error);
       });
 
   };
-
 };
+
+function goToCheckout(pkg, price) {
+  selectedPackage = pkg;
+  selectedPrice = price;
+
+  document.getElementById("mainPage").style.display = "none";
+  document.getElementById("checkoutPage").style.display = "block";
+
+  document.getElementById("checkoutPackage").innerText = "Package: " + pkg;
+  document.getElementById("checkoutPrice").innerText = "Price: " + price;
+}
 
 function goBack() {
   document.getElementById("checkoutPage").style.display = "none";
