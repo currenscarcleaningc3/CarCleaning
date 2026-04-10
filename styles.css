@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #000;
   color: #fff;
+  padding-top: 70px; /* SAME as header height */
 }
 
 header {
@@ -55,11 +56,30 @@ section {
 .packageContent {
   width: 70%;
   padding: 20px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers everything horizontally */
+  justify-content: center;
+  text-align: center;    /* centers text */
 }
+
+.packageDesc {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.packagePrice {
+  font-size: 1.2rem;
+  color: white;
+  margin: 5px 0 10px 0;
+}
+
 
 .packageTitle {
   color: orange;
+  text-align: center;
   margin-top: 0;
 }
 
@@ -91,4 +111,28 @@ section {
 .backBtn {
   background-color: gray;
   color: white;
+}
+
+
+.siteHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  background-color: #0d0d0d;
+  border-bottom: 2px solid orange;
+
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: orange;
 }
