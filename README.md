@@ -2,7 +2,7 @@
 
 
 
-add a logo to the tab, and maybe change the tab name if needed.
+Make it so title changed doeending on waht page 
 
 mix n match section
 
