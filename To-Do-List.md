@@ -1,6 +1,6 @@
 
 
-# A. Figure out if github allows me to change the title of the tab.
+# A. Change the title of the tab depemding on what page their on
 
 # B. Add the Mix N Match section of the packages
 
